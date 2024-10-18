@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Chatbot UI with Flask Backend</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+     <style>
+    </style>
+</head>
+<body>
+   <header class="page-header">
+        <h2>स्वागत बा भोजपुरी चैटबोट45 में</h2>
+        <p>यह चैटबॉट भोजपुरी में संचार करता है। कोई भी प्रश्न पूछने के लिए स्वतंत्र महसूस करें!</p>
+    </header>
+    <main>
+        <div class="chat-container">
+            <div class="default-text">
+                <h1>स्वागत 45है!</h1>
+                <p>चैटबॉट के साथ बातचीत शुरू करें t।</p>
+            </div>
+        </div>
+        <div class="typing-container">
+  <div class="typing-content">
+    <div class="typing-textarea">
+      <textarea id="chat-input" placeholder="Type your message..."></textarea>
+      <div class="buttons">
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+        <span id="voice-btn" class="material-symbols-rounded">mic</span>
+        <span id="clear-btn" class="material-symbols-rounded">clear</span>
+      </div>
+    </div>
+  </div>
+</div>
+    </main>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
