@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template
 import random
 import json
 import logging
-from nltk.chat.util import Chat, reflections
+# from nltk.chat.util import Chat, reflections
 app = Flask(__name__)
 
 # Load intents
